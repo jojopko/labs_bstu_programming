@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab7", "..\..\..\source\rep
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab8", "..\..\..\source\repos\jojopko\bstu-programming\labs\lab8\lab8.vcxproj", "{0EF50F5D-08D9-4688-AF5D-0B89188F630C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab9", "lab9\lab9.vcxproj", "{5F73534C-59D8-46E5-870C-434909901F5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{0EF50F5D-08D9-4688-AF5D-0B89188F630C}.Release|x64.Build.0 = Release|x64
 		{0EF50F5D-08D9-4688-AF5D-0B89188F630C}.Release|x86.ActiveCfg = Release|Win32
 		{0EF50F5D-08D9-4688-AF5D-0B89188F630C}.Release|x86.Build.0 = Release|Win32
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Debug|x64.ActiveCfg = Debug|x64
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Debug|x64.Build.0 = Debug|x64
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Debug|x86.ActiveCfg = Debug|Win32
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Debug|x86.Build.0 = Debug|Win32
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Release|x64.ActiveCfg = Release|x64
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Release|x64.Build.0 = Release|x64
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Release|x86.ActiveCfg = Release|Win32
+		{5F73534C-59D8-46E5-870C-434909901F5E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

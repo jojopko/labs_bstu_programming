@@ -1,4 +1,4 @@
-﻿// Laboratory work on programming N9. Serezhkin Konstantin 
+﻿// Laboratory work on programming N10. Serezhkin Konstantin 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

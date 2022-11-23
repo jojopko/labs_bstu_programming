@@ -9,15 +9,15 @@
 */
 
 int main(int argc, char ** argv) {
-	unsigned int A, B, number, multy;
-	unsigned int min = 4294967295u;
+	int A, B, number, multy;
+	int min = 4294967295u;
 
 	do {
 		printf_s("A = ");
 		scanf_s("%u", &A);
 		printf_s("B = ");
 		scanf_s("%u", &B);
-	} while (A == 0 || B == 0);
+	} while (A <= 0 || B <= 0);
 
 	for (unsigned int i = A; i < B; i++) {
 		number = i;

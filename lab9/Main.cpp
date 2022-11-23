@@ -22,19 +22,15 @@ f(x) = | 6tg(x), -1 <= x <= 10
 	   \ 3/2x, x > 10
 */
 double f2_1(double x) {
-	double f;
-
-	// Ветление 
 	if (x < -1) {
-		f = 4;
+		return 4;
 	}
 	else if (x <= 10) {
-		f = tan(x) * 6;
+		return tan(x) * 6;
 	}
 	else {
-		f = 3 / (2 * x);
+		return 3 / (2 * x);
 	}
-	return f;
 }
 
 void f2() {

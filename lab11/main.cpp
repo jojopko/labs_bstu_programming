@@ -5,12 +5,12 @@
 
 // вычисление частичной суммы ряда
 // 
-//              -i   1-x
-// Σ(n;i=1) (-1)    -----
-//                   i+1
+//  n      -i   1-x
+// Σ   (-1)    -----
+//  i=1         i+1
 // 
 void f1() {
-	int n, step = 1;
+	int n, st = 1;
 	double x, sum = 0;
 
 	// input
@@ -20,8 +20,8 @@ void f1() {
 	scanf_s("%lf", &x);
 
 	for (int i = 1; i <= n; i++) {
-		step *= -1;
-		sum += step * (1 - x) / (i + 1);
+		st *= -1;
+		sum += st * (1 - x) / (i + 1);
 	}
 
 	printf_s("%lf", sum);
@@ -56,6 +56,8 @@ double f2(double x, double exactness) {
 
 int main(int argc, char ** argv) {
 	//f1();
+
+
 	double x, e;
 	printf_s("x = ");
 	scanf_s("%lf", &x);
@@ -64,8 +66,5 @@ int main(int argc, char ** argv) {
 
 
 	printf_s("%lf\n", f2(x, e));
-	//fff(x, e);
-	//printf_s("%lf", calc_nearly_sum(x, e));
-	
 	return 1;
 }

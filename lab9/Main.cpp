@@ -28,7 +28,7 @@ double f2_1(double x) {
 	if (x < -1) {
 		f = 4;
 	}
-	else if (x >= -1 && x <= 10) {
+	else if (x <= 10) {
 		f = tan(x) * 6;
 	}
 	else {

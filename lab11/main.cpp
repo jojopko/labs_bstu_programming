@@ -33,7 +33,15 @@ void f1() {
 //  ∞     i  |cos(2x )|
 // Σ  (-1)  ------------
 //  i=1          xi
-//              3
+//              
+double pow(double n, int x) {
+	double result = 1;
+	for (; x > 0; x--) {
+		result *= n;
+	}
+	return result;
+}
+
 double f2(double x, double exactness) {
 	int i = 1;
 	double factorial = 1, sum = 0, iter_val;
@@ -44,44 +52,6 @@ double f2(double x, double exactness) {
 		factorial *= i;
 	} while (fabs(iter_val) > exactness);
 	return sum;
-}
-
-double pow(double n, int x) {
-	double result = 1;
-	for (; x > 0; x--) {
-		result *= n;
-	}
-	return result;
-}
-
-double calc_nearly_sum(double x, double exactness) {
-	int i = 1;
-	double factorial = 1, sum = 0, iter_val;
-	do {
-		iter_val = pow(-1, i) * pow(x, i) / factorial;
-		sum += iter_val;
-		i++;
-		factorial *= i;
-	} while (fabs(iter_val) > exactness);
-	return sum;
-}
-
-void fff(double x, double e) {
-	int st1, i;
-	double s = 0, stx, sl, f;
-	st1 = -1;
-	f = 1;
-	stx = x;
-	i = 1;
-	do {
-		sl = st1 * stx / f;
-		s += sl;
-		i++;
-		stx *= x;
-		st1 *= -1;
-		f *= i;
-	} while (fabs(sl) > e);
-	printf_s("%lf", s);
 }
 
 int main(int argc, char ** argv) {

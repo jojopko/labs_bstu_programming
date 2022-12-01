@@ -1,7 +1,8 @@
-﻿// Laboratory work on programming N11. Serezhkin Konstantin 
+﻿// Laboratory work #11. Serezhkin Konstantin
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "../mydef.h"
 
 // вычисление частичной суммы ряда
 // 

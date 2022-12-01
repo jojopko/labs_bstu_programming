@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+#include "../mydef.h"
+
 /*
 	6. Дано количество дней с начало года. 
 	Вывести название дня недели, если первое января был понедельник.
@@ -24,7 +26,7 @@ void f1() {
 	day_of_week = past_days_of_year % 7;
 
 	// Вывод
-	system("chcp 1251 > NUL");
+	// system("chcp 1251 > NUL");
 	printf_s("Result: ");
 	switch (day_of_week) {
 	case 0:

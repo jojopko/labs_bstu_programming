@@ -1,7 +1,8 @@
-﻿// Laboratory work on programming # 9. Serezhkin Konstantin 
+﻿// Laboratory work #9. Serezhkin Konstantin
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "../mydef.h"
 
 // 18. Вычислить значения выражений у для значений x, равных 1, 2, …, 20: y = 2t^2 + 2t + 2, t =1 + x.
 void f1() {
@@ -12,8 +13,6 @@ void f1() {
 		y = 2 * t * t + 2 * t + 2;
 		printf_s("%d: %d\n", x, y);
 	}
-	system("pause");
-	system("cls");
 }
 
 /*

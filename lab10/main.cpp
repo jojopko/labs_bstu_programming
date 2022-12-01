@@ -1,7 +1,8 @@
-﻿// Laboratory work on programming N10. Serezhkin Konstantin 
+﻿// Laboratory work #10. Serezhkin Konstantin
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "../mydef.h"
 
 /*
 	18. Среди натуральных чисел из промежутка от А до В найти число с наименьшим произведением цифр.
@@ -29,7 +30,5 @@ int main(int argc, char ** argv) {
 		min = multy < min ? multy : min;
 	}
 	printf_s("%u\n", min);
-	system("pause");
-	system("cls");
 	return 0;
 }
